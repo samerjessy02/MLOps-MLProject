@@ -35,13 +35,10 @@ def main():
     BASE_DIR = Path(__file__).resolve().parent
     output_dir = BASE_DIR / "plots"
 
-    # ── Load preprocessed splits from the notebook ──────────────────────────
-    # Import the preprocessing function exposed by the notebook's helper
     from src.data_preprocessing import load_and_preprocess_data
-    data_path = BASE_DIR / "dataset/hand_landmarks_data.csv"
+    data_path = BASE_DIR / "hand_landmarks_data.csv"
     X_train, X_test, y_train, y_test = load_and_preprocess_data(data_path)
 
-    # ── Train & log each model ───────────────────────────────────────────────
     lr_model = train_logistic_regression(X_train, y_train)
     log_model_with_mlflow(lr_model, X_test, y_test, GESTURE_CLASSES, "LogisticRegression", experiment_id, output_dir)
 
