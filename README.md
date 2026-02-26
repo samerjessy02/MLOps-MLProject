@@ -47,6 +47,14 @@ Although SVM achieved the same test accuracy (0.98) and Macro F1-Score (0.98), *
 
 ---
 
+## MLflow Tracking Backend
+
+This project uses a **SQLite database** as the MLflow tracking backend instead of the default file-based `mlruns/` folder. This means experiment data is stored in two places:
+
+- **`mlflow.db`** — SQLite database that stores all run metadata: parameters, metrics, and tags
+- **`mlartifacts/`** — folder that stores all artifacts: models, confusion matrix plots, and dataset inputs
+---
+
 ## How to Run
 
 ### 1. Install dependencies
@@ -56,7 +64,7 @@ pip install -r requirements.txt
 
 ### 2. Start the MLflow tracking server
 ```bash
-mlflow server --host 127.0.0.1 --port 5000
+mlflow server --backend-store-uri sqlite:///mlflow.db --host 127.0.0.1 --port 5000
 ```
 
 ### 3. Run the experiment
@@ -74,10 +82,11 @@ Navigate to [http://localhost:5000](http://localhost:5000) in your browser to ex
 ```
 ├── main.py                        # Entry point — trains and logs all models
 ├── requirements.txt
+├── mlflow.db                      # SQLite database storing all run metadata
+├── mlartifacts/                   # MLflow artifacts: models, plots, datasets
 ├── dataset/
 │   └── hand_landmarks_data.csv
 ├── plots/                         # Confusion matrix plots (auto-generated)
-├── mlruns/                        # MLflow tracking data (auto-generated)
 ├── screenshots/                   # MLflow UI screenshots
 └── src/
     ├── data_preprocessing.py      # Data loading, normalization, train/test split
