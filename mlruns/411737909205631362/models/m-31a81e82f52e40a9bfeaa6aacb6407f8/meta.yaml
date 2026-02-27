@@ -1,0 +1,10 @@
+artifact_location: file:F:/ITI/MLflow/MLFlow Project/mlruns/411737909205631362/models/m-31a81e82f52e40a9bfeaa6aacb6407f8/artifacts
+creation_timestamp: 1772180325507
+experiment_id: '411737909205631362'
+last_updated_timestamp: 1772180332667
+model_id: m-31a81e82f52e40a9bfeaa6aacb6407f8
+model_type: null
+name: DecisionTree
+source_run_id: bc6cb934b1f34b899c0dac659a0c82a5
+status: 2
+status_message: null

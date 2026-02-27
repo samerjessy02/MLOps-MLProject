@@ -1,0 +1,10 @@
+artifact_location: file:F:/ITI/MLflow/MLFlow Project/mlruns/411737909205631362/models/m-a8cb17614260449abc88778327613059/artifacts
+creation_timestamp: 1772180248814
+experiment_id: '411737909205631362'
+last_updated_timestamp: 1772180264227
+model_id: m-a8cb17614260449abc88778327613059
+model_type: null
+name: LogisticRegression
+source_run_id: eae4ed75ddc648e89f78c6a1388ee98d
+status: 2
+status_message: null

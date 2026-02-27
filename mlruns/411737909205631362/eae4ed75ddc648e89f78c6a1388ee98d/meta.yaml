@@ -1,0 +1,14 @@
+artifact_uri: file:F:/ITI/MLflow/MLFlow Project/mlruns/411737909205631362/eae4ed75ddc648e89f78c6a1388ee98d/artifacts
+end_time: 1772180264246
+entry_point_name: ''
+experiment_id: '411737909205631362'
+lifecycle_stage: active
+run_id: eae4ed75ddc648e89f78c6a1388ee98d
+run_name: LogisticRegression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772180244531
+status: 3
+tags: []
+user_id: jessy

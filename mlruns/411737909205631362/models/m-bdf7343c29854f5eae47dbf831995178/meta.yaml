@@ -1,0 +1,10 @@
+artifact_location: file:F:/ITI/MLflow/MLFlow Project/mlruns/411737909205631362/models/m-bdf7343c29854f5eae47dbf831995178/artifacts
+creation_timestamp: 1772180546973
+experiment_id: '411737909205631362'
+last_updated_timestamp: 1772180555766
+model_id: m-bdf7343c29854f5eae47dbf831995178
+model_type: null
+name: SVM
+source_run_id: c24e1ce8c3024b8e97f5b2aca5f67a7c
+status: 2
+status_message: null

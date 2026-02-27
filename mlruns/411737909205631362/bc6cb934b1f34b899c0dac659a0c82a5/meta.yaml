@@ -1,0 +1,14 @@
+artifact_uri: file:F:/ITI/MLflow/MLFlow Project/mlruns/411737909205631362/bc6cb934b1f34b899c0dac659a0c82a5/artifacts
+end_time: 1772180332685
+entry_point_name: ''
+experiment_id: '411737909205631362'
+lifecycle_stage: active
+run_id: bc6cb934b1f34b899c0dac659a0c82a5
+run_name: DecisionTree
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772180322223
+status: 3
+tags: []
+user_id: jessy
