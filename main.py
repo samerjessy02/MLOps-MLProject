@@ -36,7 +36,7 @@ def main():
     output_dir = BASE_DIR / "plots"
 
     from src.data_preprocessing import load_and_preprocess_data
-    data_path = BASE_DIR / "hand_landmarks_data.csv"
+    data_path = BASE_DIR / "dataset/hand_landmarks_data.csv"
     X_train, X_test, y_train, y_test = load_and_preprocess_data(data_path)
 
     lr_model = train_logistic_regression(X_train, y_train)
