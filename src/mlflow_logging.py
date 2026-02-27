@@ -7,7 +7,7 @@ from src.evaluation import eval_metrics, plot_confusion_matrix
 import logging
 
 
-def setup_mlflow_experiment(experiment_name: str, tracking_uri: str = "http://localhost:5000") -> str:
+def setup_mlflow_experiment(experiment_name: str, tracking_uri: str = "mlruns") -> str:
     mlflow.set_tracking_uri(tracking_uri)
     exp = mlflow.set_experiment(experiment_name)
     return exp.experiment_id
